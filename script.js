@@ -85,11 +85,11 @@ for (let i = 1; i <= 12; i++){
 function getPyramidArea(length, width, height){
     let baseArea = length * width
     let pyramidVolum = 1/3 * baseArea * height
-    console.log(pyramidVolum)
-}
-getPyramidArea(
     
-)
-getPyramidArea()
-getPyramidArea()
-getPyramidArea()
+    //console.log(pyramidVolum)
+    return pyramidVolum
+}
+let area1 = getPyramidArea(2, 2, 3)
+let area2 =getPyramidArea(4, 5, 6)
+
+console.log('Area 1 = ' + area1 + ', Area 2 =' + area2)
