@@ -79,9 +79,10 @@ for (let i = 1; i <= 12; i++){
 }*/
 
 
+
+
 //function
-
-
+/*
 function getPyramidArea(length, width, height){
     let baseArea = length * width
     let pyramidVolum = 1/3 * baseArea * height
@@ -93,3 +94,39 @@ let area1 = getPyramidArea(2, 2, 3)
 let area2 =getPyramidArea(4, 5, 6)
 
 console.log('Area 1 = ' + area1 + ', Area 2 =' + area2)
+*/
+
+
+let content2 = document.getElementById('content-2')
+let textHtml = '<b>Phanuphong Lacahtha</b>'
+textHtml += '<i> PICK</i>'
+content2.innerHTML = textHtml
+
+
+let discountButton = document.getElementById('discount-button')
+let message = document.getElementById('massage')
+
+function showMessage(){
+    message.innerHTML = 'หมดเวลาสนุกแล้วสิ'
+}
+discountButton.addEventListener('click', showMessage)
+
+
+
+let numberInput = document.getElementById('number-input')
+let runButton = document.getElementById('run-button')
+let output = document.getElementById('output')
+
+function printMultiply(){
+    let number = Number(numberInput.value)
+    let outputHtml = '';
+
+    for (let i = 1; i <= 12; i++){
+        outputHtml +='<p>'
+        outputHtml += number + ' x ' + i + ' = ' + (number * i);
+        outputHtml += '</p>'
+    }
+    outputHtml.innerHTML = outputHtml
+    
+}
+runButton.addEventListener('click', printMultiply)
