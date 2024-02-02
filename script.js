@@ -61,8 +61,35 @@ if(score >= 80){
 }
 */
 
-
+/*
 //Loop
-for (){
+for (let i = 1; i <= 12; i++){
+    //console.log(i)
+
+   /* if(i % 2 === 0){
+        continue;
+    }*/
     
+    /*if (i % 10  === 0){
+        break
+    }*/
+/*
+   let answer = i ** 2;
+   console.log(answer);
+}*/
+
+
+//function
+
+
+function getPyramidArea(length, width, height){
+    let baseArea = length * width
+    let pyramidVolum = 1/3 * baseArea * height
+    console.log(pyramidVolum)
 }
+getPyramidArea(
+    
+)
+getPyramidArea()
+getPyramidArea()
+getPyramidArea()
